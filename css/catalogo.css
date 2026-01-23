@@ -1,0 +1,68 @@
+    .catalogo {
+        display: flex;
+        gap: 30px;
+        margin: 60px 20px;
+    }
+
+    /* CARD */
+    .catalogo__card {
+        width: 300px;
+        position: relative;
+    }
+
+    /* WRAPPER DA IMAGEM */
+    .catalogo__img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    /* IMAGEM */
+    .catalogo__img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+
+    /* ZOOM SUAVE */
+    .catalogo__img:hover img {
+        transform: scale(1.08);
+    }
+
+    /* OVERLAY */
+    .catalogo__img::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    /* ATIVA OVERLAY */
+    .catalogo__img:hover::after {
+        opacity: 1;
+    }
+
+    /* TEXTO */
+    .catalogo__card h1 {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+
+    color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        pointer-events: none; /* não atrapalha o hover */
+    }
+
+    .catalogo__card h1 span {
+        background: rgba(0,0,0,0.6);
+        padding: 2px 10px;
+        border-radius: 8px;
+    }
