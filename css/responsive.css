@@ -1,28 +1,107 @@
     @media (max-width: 768px) {
+    
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
-    /* botão aparece */
-    #menu-btn {
-        display: block;
+        /* botão aparece */
+        #menu-btn {
+            display: block;
+        }
+
+        .header {
+            position: relative;
+            z-index: 1000;
+            padding: 5px 20px;
+        }
+
+        .header__dir {
+            gap: 1rem;
+        }
+
+        .header__logo img {
+            width: 4rem; 
+        }
+
+        #menu-btn {
+            font-size: 1.5rem;
+        }
+        
+        .header__menu {
+            z-index: 2000;
+        }
+
+        .header__icones .material-symbols-outlined {
+            font-size: 1.4rem;
+        }
+
+        .material-symbols-outlined {
+            cursor: pointer;
+        }
+
+        .header__menu a {
+            width: fit-content;
+        }
+
+        /* menu vira off-canvas */
+        .header__menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 250px;
+            height: 100vh;
+            background: var(--secondary-color);
+            transition: right 0.3s ease;
+            padding-top: 4rem;
+        }
+
+        .header__menu.ativo {
+            right: 0;
+        }
+
+        .header__menu ul {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .hero {
+            position: relative;
+            z-index: 1;
+            height: 30vh;
+        }
+
+        .offers{
+            padding: 5px 0;
+            font-size: 0.7rem;
+        }
+
+        .catalogo {
+            display: flex;
+            gap: 5px;
+            margin: 10px 10px;
+        }
+
+        .catalogo__img {
+            border-radius: 4px;
+        }
+
+        .catalogo__card h1 {
+            font-size: 0.4rem;
+        }
+
+        .catalogo__card h1 span {
+            padding: 2px 5px;
+        }
     }
 
-    /* menu vira off-canvas */
-    .header__menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 250px;
-        height: 100vh;
-        background: #fff;
-        transition: right 0.3s ease;
-        padding-top: 4rem;
-    }
+    @media (max-width: 480px) {
+        .hero {
+            height: 27vh;
+        }
 
-    .header__menu.ativo {
-        right: 0;
-    }
-
-    .header__menu ul {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+        .offers{
+            padding: 3px 0;
+            font-size: 0.5rem;
+        }
     }

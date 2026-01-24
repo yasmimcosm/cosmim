@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     #menu-btn {
@@ -40,12 +40,38 @@
     .header__menu.ativo {
         right: 0;
     }
+
     .header__menu ul{
         flex-direction: row;
         display: flex;
-        align-items: center;
+        align-items: left;
         list-style: none;
         gap: 2.5rem;
+    }
+
+    .header__menu a {
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .header__menu a::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--background-primary-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 0.4s ease;
+    }
+
+    .header__menu a:hover::after {
+        width: 100%;
+    }
+
+    .header__icones .material-symbols-outlined {
+            font-size: 1.7rem;
     }
 
     .hero {

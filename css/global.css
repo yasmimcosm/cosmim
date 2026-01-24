@@ -33,15 +33,15 @@
     select,
     textarea,
     button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     body {
-    font-family: "Montserrat";
-    color: var(--text-primary-color);
-    overflow-x: hidden;
+        font-family: "Montserrat";
+        color: var(--text-primary-color);
+        overflow-x: hidden;
     }
 
     img {
@@ -51,15 +51,15 @@
     }
 
     .button {
-    min-width: 280px;
-    height: 64px;
-    color: var(--text-secondary-color);
-    font-weight: var(--title-weight);
-    font-size: 20px;
-    background-color: var(--secondary-color);
-    border-radius: 16px;
-    display: inline-block;
-    text-decoration: none;
-    line-height: 64px;
-    text-align: center;
+        min-width: 280px;
+        height: 64px;
+        color: var(--text-secondary-color);
+        font-weight: var(--title-weight);
+        font-size: 20px;
+        background-color: var(--secondary-color);
+        border-radius: 16px;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 64px;
+        text-align: center;
     }
