@@ -1,10 +1,10 @@
     .header {
-    background-color: var(--background-tertiary-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 48px;
+        background-color: var(--background-tertiary-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 48px;
     }
 
     .header__logo img {
@@ -25,9 +25,25 @@
         gap: 1rem;
     }
 
+    #menu-btn {
+        display: none;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header__menu {
+        position: static;
+    }
+
+    .header__menu.ativo {
+        right: 0;
+    }
     .header__menu ul{
+        flex-direction: row;
         display: flex;
-        justify-content: space-around;
+        align-items: center;
         list-style: none;
         gap: 2.5rem;
     }
@@ -35,18 +51,18 @@
     .hero {
         width: 100%;
         height: 80vh; /* controla o tamanho do banner */
-        background-image: url("/cosmim/img/hero__banner.png");
+        background-image: url("../img/hero__banner.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
-        overflow-x: hidden;
         align-items: center;
+        position: relative;
     }
 
     .offers{
         display: flex;
-        color: #ffff;
+        color: #fff;
         background-color: #000000;
         justify-content: center;
         align-items: center;

@@ -1,3 +1,28 @@
-@media (max-width: 768px){
-    
-}
+    @media (max-width: 768px) {
+
+    /* botão aparece */
+    #menu-btn {
+        display: block;
+    }
+
+    /* menu vira off-canvas */
+    .header__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: #fff;
+        transition: right 0.3s ease;
+        padding-top: 4rem;
+    }
+
+    .header__menu.ativo {
+        right: 0;
+    }
+
+    .header__menu ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    }
