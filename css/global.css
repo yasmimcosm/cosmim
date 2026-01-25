@@ -43,6 +43,7 @@
     }
 
     body {
+        margin-top: 4rem;
         font-family: "Montserrat";
         color: var(--text-primary-color);
         overflow-x: hidden;

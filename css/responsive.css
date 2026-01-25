@@ -1,5 +1,9 @@
     @media (max-width: 768px) {
-    
+
+        body {
+            margin-top: 0rem;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -87,11 +91,11 @@
         }
 
         .catalogo__card h1 {
-            font-size: 0.4rem;
+            font-size: 0.6rem;
         }
 
         .catalogo__card h1 span {
-            padding: 2px 5px;
+            padding: 2px 8px;
         }
     }
 
@@ -119,5 +123,13 @@
         .offers{
             padding: 3px 0;
             font-size: 0.5rem;
+        }
+
+        .catalogo__card h1 {
+            font-size: 0.3rem;
+        }
+
+        .catalogo__card h1 span {
+            padding: 1px 3px;
         }
     }
